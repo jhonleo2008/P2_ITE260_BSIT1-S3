@@ -3,16 +3,16 @@ print("STUDENT ACTIVITY SCORE SYSTEM")
 Students = int(input("\nHow many students? "))
 
 def Students_info ():
-    S_1 = str(input("Enter your name:"))
-    A = float(input("Activity 1:"))
-    B = float(input("Activity 2:"))
-    C = float(input("Activity 3:"))
+    L = str(input("Enter your name: "))
+    E = float(input("Activity 1: "))
+    O = float(input("Activity 2: "))
+    R = float(input("Activity 3: "))
 
-    return S_1, (A + B + C)/3
+    return L, (E + O + R)/3
 
 for i in range (Students):
     print("\nSTUDENT:", i + 1)
-    S_1, Average = Students_info()
+    L, Average = Students_info()
 
     if Average >= 90:
         Status = "Excellent"
@@ -25,8 +25,8 @@ for i in range (Students):
 
 
 
-    print("STUDENT REPORT")
-    print("\nNAME: ", S_1)
+    print("\nSTUDENT REPORT")
+    print("NAME: ", L)
     print("Average: ",round(Average, 2))
     print("Status: ", Status)
 
